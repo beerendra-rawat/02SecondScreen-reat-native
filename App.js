@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text, ScrollView, SectionList } from "react-native";
+import UserInput from "./Component/InputText";
+import UserData from "./Component/UserData";
+import FlatLists from "./Component/FlatLists";
+import DynamicGrid from "./Component/DynmicGrid";
+import SectionLists from "./Component/SectionList";
+import ClassComponent from "./Component/ClassComponent";
 
-export default function App() {
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <>
+      <ScrollView style={{ marginBottom: 30 }}>
+        {/* <View style={{ marginTop: 35 }}>
+          <Text style={{ fontSize: 30, color: "blue" }}>Hello react-native user "It is a main file"</Text>
+        </View>
+        <UserInput />
+        <UserData />
+        <FlatLists />
+        <DynamicGrid /> */}
+        <SectionLists />
+        {/* <ClassComponent /> */}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+      </ScrollView>
+    </>
+  )
+}
+export default App;

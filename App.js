@@ -1,28 +1,25 @@
-import { View, Text, ScrollView, SectionList } from "react-native";
+import { View, Text, ScrollView, SectionList, TouchableHighlight } from "react-native";
 import UserInput from "./Component/InputText";
 import UserData from "./Component/UserData";
 import FlatLists from "./Component/FlatLists";
 import DynamicGrid from "./Component/DynmicGrid";
 import SectionLists from "./Component/SectionList";
 import ClassComponent from "./Component/ClassComponent";
+import UseEffect from "./Hooks/UseEffect";
+import Flex from "./Component/Flex";
+import TouchableBtn from "./Component/TuchableHighlightBtn";
+import RadioBtn from "./Component/RadioBtn";
+import ActivityIndicators from "./Component/ActivityIndicators";
+import Modals from "./Component/Modals";
+import PressableBtn from "./Component/PressableBtn";
+
 
 function App() {
   return (
-    <>
-      <ScrollView style={{ marginBottom: 30 }}>
-        {/* <View style={{ marginTop: 35 }}>
-          <Text style={{ fontSize: 30, color: "blue" }}>Hello react-native user "It is a main file"</Text>
-        </View>
-        <UserInput />
-        <UserData />
-        <FlatLists />
-        <DynamicGrid /> */}
-        <SectionLists />
-        {/* <ClassComponent /> */}
-
-
-      </ScrollView>
-    </>
+    <View style={{flex: 1}}>
+      {/* <Modals /> */}
+      <PressableBtn />
+    </View>
   )
 }
 export default App;

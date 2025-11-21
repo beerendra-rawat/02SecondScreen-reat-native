@@ -14,17 +14,19 @@ import Modals from "./Component/Modals";
 import PressableBtn from "./Component/PressableBtn";
 import StatusBarr from "./Component/StatusBarr";
 import WebView from "react-native-webview";
+import Images from "./Component/Images";
 
 
 function App() {
   return (
     <View style={{flex: 1}}>
-      <WebView
+      {/* <WebView
       source={{uri:"https://reactnative.dev/"}} 
-      />
+      /> */}
       {/* <Modals /> */}
       {/* <PressableBtn />
       <StatusBarr /> */}
+      <Images />
     </View>
   )
 }

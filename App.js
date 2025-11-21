@@ -12,13 +12,19 @@ import RadioBtn from "./Component/RadioBtn";
 import ActivityIndicators from "./Component/ActivityIndicators";
 import Modals from "./Component/Modals";
 import PressableBtn from "./Component/PressableBtn";
+import StatusBarr from "./Component/StatusBarr";
+import WebView from "react-native-webview";
 
 
 function App() {
   return (
     <View style={{flex: 1}}>
+      <WebView
+      source={{uri:"https://reactnative.dev/"}} 
+      />
       {/* <Modals /> */}
-      <PressableBtn />
+      {/* <PressableBtn />
+      <StatusBarr /> */}
     </View>
   )
 }

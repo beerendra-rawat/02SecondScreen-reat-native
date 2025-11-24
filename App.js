@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, SectionList, TouchableHighlight } from "react-native";
+import { View, Text, ScrollView, SectionList, TouchableHighlight, FlatList,  } from "react-native";
 import UserInput from "./Component/InputText";
 import UserData from "./Component/UserData";
 import FlatLists from "./Component/FlatLists";
@@ -15,6 +15,7 @@ import PressableBtn from "./Component/PressableBtn";
 import StatusBarr from "./Component/StatusBarr";
 import WebView from "react-native-webview";
 import Images from "./Component/Images";
+import Student from "./Component/Student";
 
 
 function App() {
@@ -24,9 +25,15 @@ function App() {
       source={{uri:"https://reactnative.dev/"}} 
       /> */}
       {/* <Modals /> */}
-      {/* <PressableBtn />
-      <StatusBarr /> */}
-      <Images />
+      {/* <PressableBtn /> */}
+      <StatusBarr />
+      {/* <Images />
+      <Flex /> */}
+      {/* <FlatLists /> */}
+      {/* <SectionLists />
+      <RadioBtn />
+      <TouchableBtn /> */}
+      <Student />
     </View>
   )
 }
